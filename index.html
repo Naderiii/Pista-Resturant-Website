@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Pista Resturant</title> 
+</head>
+<body>
+  <header>
+    <a href="" class="logo"><i class="fas fa-utensils"></i>Pista.</a>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#dishes">Dishes</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#pista">Pista</a>
+        <a href="#home">Home</a>
+    </nav>
+    
+    <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="search-icon"></i>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+  </header>
+  
+  <!-- Search form -->
+  <form action="" id="search-form">
+    <input type="search" name="" id="search-box" placeholder="Search here...">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+  </form>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="swiper myswiper home-slider">
+      <div class="swiper-wrapper wrapper">
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our special dish</span>
+            <h3>Spaghetti Pizza</h3>
+            <p>This baked spaghetti recipe is from my children's preschool. A fun combination of pasta and pizza ingredients, it's always a hit with the kids.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="images/spaghetti-pizza.png" alt="Spaghetti Pizza">
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our special dish</span>
+            <h3>Crispy Fried Chicken</h3>
+            <p>I experimented with lots of recipes over the years to find the best crispy fried chicken. This is it! It's bits and pieces of hints I have heard over the years. It's more a matter of preparation and cooking method!</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="images/CrispyFriedChicken.png" alt="Crispy Fried Chicken">
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our special dish</span>
+            <h3>Juicy Roasted Chicken</h3>
+            <p>This roasted chicken is perfectly seasoned and just like the way my grandmother used to make it. The method used in this recipe results in the juiciest chicken! We loved to nibble on the celery after it was cooked.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="images/juicy-roast-chicken.png" alt="Juicy Roasted Chicken">
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our special dish</span>
+            <h3>Classic Macaroni Salad</h3>
+            <p>This macaroni salad always gets lots of compliments. It's an easy recipe to make and has a pleasing taste that everyone seems to love!</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="images/classic-macaroni-salad.png" alt="Classic Macaroni Salad">
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
