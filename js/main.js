@@ -7,7 +7,7 @@ menu.addEventListener('click', () => {
 })
 
 let sections = document.querySelectorAll("section");
-let navlinks = document.querySelectorAll("header .navbar a");
+let navLinks = document.querySelectorAll("header .navbar a");
 
 window.onscroll = () => {
     menu.classList.remove('fa-times');
@@ -16,13 +16,13 @@ window.onscroll = () => {
     sections.forEach(section => {
       let top = window.scrollY;
       let height = section.offsetHeight;
-      let offset = section.offsetTop -150;
-      let id = section.getAttribute("id");
+      let offset = section.offsetTop - 150;
+      let id = section.getAttribute('id');
 
       if (top >= offset && top < offset + height){
-        navlinks.forEach(link => {
-          link.classList.remove(active);
-          document.querySelector('header .navbar a[href* = ' +id+ ']').classList.add("active");
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          document.querySelector('header .navbar a[href*='+id+']').classList.add("active");
         })
       }
     })
@@ -72,3 +72,13 @@ var swiper = new Swiper(".home-slider", {
       },
     },
   });
+
+  function loader (){
+    document.querySelector(".loader-container").classList.add("fade-out");
+  }
+
+  function fadeOut () {
+    setInterval(loader, 3000);
+  }
+
+  window.onload = fadeOut;

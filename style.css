@@ -504,7 +504,7 @@ header .icons #menu-bar{
     color: var(--light-color);
 }
 
-.swiper2 {
+.swiper3 {
     height: 35rem;
 }
 
@@ -577,14 +577,14 @@ header .icons #menu-bar{
     color: var(--black);
 }
 
-.footer .box-container .box h3 a {
+.footer .box-container .box a {
     display: block;
     padding: 0.5rem 0;
     font-size: 1.5rem;
     color: var(--light-color);
 }
 
-.footer .box-container .box h3 a:hover {
+.footer .box-container .box a:hover {
     color: var(--green);
     text-decoration: underline;
 }
@@ -603,21 +603,34 @@ header .icons #menu-bar{
     color: var(--green);
 }
 
+/* loader */
 
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
+.loader-container img {
+    width: 35rem;
+}
 
-
-
-
-
-
-
-
-
-
+.loader-container.fade-out {
+    top: 110%;
+    opacity: 0;
+}
 
 
 /* Media Queries */
+
 @media (max-width:991px){
     html {
         font-size: 55%;
